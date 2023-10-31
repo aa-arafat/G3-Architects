@@ -1,0 +1,471 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1200px;
+    background-color: #FF900E1A;
+    /* Change this to the desired background color */
+
+    z-index: -1;
+}
+
+.topPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyNamae {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.content {
+    display: flex;
+    column-gap: 60px;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--Dark-02, #424242);
+}
+
+.content>a {
+    color: var(--Dark-02, #424242);
+    ;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    max-width: 862px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.heading>h1 {
+    font-size: 64px;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 100px;
+}
+
+.heading>p {
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 15px;
+}
+
+.heading>div>button {
+    font-family: 'Work Sans', sans-serif;
+    padding: 21px;
+    margin-top: 32px;
+    color: white;
+    border: #FF900E;
+    border-radius: 8px;
+    background-color: #FF900E;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.heading>div>button:hover {
+    background-color: #FFA523;
+    /* Change the background color on hover */
+}
+
+.bennar {
+    background-image: url(../images/Rectangle.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+
+
+.features>.feature-img>.picture {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+
+}
+
+.features {
+    display: flex;
+
+    align-items: center;
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* Adjust as needed */
+    margin-left: 75px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.features-list {
+
+    margin-left: 72px;
+}
+
+.features-list h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Rest of your CSS for styling goes here */
+.first-line {
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.second-line {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.third-line {
+    color: #FF900E;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.features-list>p {
+    margin-top: 24px;
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.features-list>button {
+    font-family: 'Work Sans', sans-serif;
+    padding: 21px;
+    margin-top: 32px;
+    color: white;
+    border: #FF900E;
+    border-radius: 8px;
+    background-color: #FF900E;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.features-list>button:hover {
+    background-color: #FFA523;
+    /* Change the background color on hover */
+}
+
+
+.mainFeatures {
+    display: flex;
+    margin-top: 130px;
+}
+
+.mainFeatures-list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+
+}
+
+.mainFeatures-list>ul {
+    list-style: none;
+}
+
+.mainFeatures-list>ul>li {
+    margin-top: 70px;
+
+    font-family: Work Sans;
+}
+
+.mainFeatures-list>ul>li h1 {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mainFeatures-list>ul>li p {
+    margin-top: 10px;
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.mainFeatures-list>div>h1 {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+    position: relative;
+    /* Add relative positioning to the parent */
+    padding-left: 20px;
+}
+
+.mainFeatures-list>div>h1::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+
+    border-left: 3px solid #FF900E;
+    /* Adjust the border properties as needed */
+}
+
+.mainFeatures-list>div>p {
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+
+
+
+.mainFeatures-img {
+    width: 50%;
+}
+
+.mainFeatures-img img {
+    width: 708px;
+    height: 982px;
+    flex-shrink: 0;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    width: 300px;
+    height: 170px;
+    color: white;
+    border: #FF900E;
+    border-radius: 8px;
+    background-color: #FF900E;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 540px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+
+    justify-content: center;
+}
+
+.experience>h2 {
+    font-size: 50px;
+}
+
+.experience:hover {
+    background-color: #FFA523;
+}
+
+.facts {
+    margin-top: 130px;
+}
+
+.facts h2 {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 30px;
+
+    font-weight: 700;
+
+}
+
+.facts>p {
+    margin-top: 24px;
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.achivement {
+    margin: 0 auto;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+   
+}
+
+.medal {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 30px 20px;
+
+}
+
+.medal i {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.medal h3,
+.medal p {
+    color: var(--Dark-02, #424242);
+    font-family: Work Sans;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 600;
+
+}
+
+.medal p {
+    color: var(--Dark-03, #727272);
+    font-size: 15px !important;
+
+
+
+}
+
+.sponspoes {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 0 auto;
+}
+
+.sponspoes h2 {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sponspoes p {
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.logo img {
+    width: 90px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.logo i {
+    text-align: center;
+    margin-right: 10px;
+
+    font-size: 35px;
+}
+
+.logo p {
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.spotify {
+    color: #1ED760 !important;
+}
+
+.amazon i {
+    background: linear-gradient(to bottom, black 72%, #FF9800 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.copyright {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: var(--Dark-02, #424242);
+    background-color: #FFF4E7;
+    font-family: Work Sans;
+    font-size: 15px;
+    text-align: center;
+    padding: 30px 20px;
+}
+.google{
+    background: linear-gradient(50deg,blue,red, yellow, green);
+    -webkit-background-clip: text; /* For webkit browsers */
+    background-clip: text;
+    color: transparent;
+}
+.figma i{
+color: #ff7262;
+}
