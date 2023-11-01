@@ -1,107 +1,216 @@
 /* Media query for screens with a maximum width of 1150px */
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1170px) {
   .container {
-      width: 100%; /* Make the container width 100% for smaller screens */
+    width: 1095%;
+    
+    /* Make the container width 100% for smaller screens */
+  }
+
+  header::before {
+    height: 600px;
+    /* Adjust the height of the header background */
+  }
+
+  .topPart {
+    flex-direction: column;
+    /* Change flex direction to column for topPart */
+    text-align: center;
+    /* Center-align content in topPart */
+  }
+
+  .content {
+    column-gap: 0;
+    /* Remove the column gap for content */
+    margin-top: 20px;
+    /* Adjust top margin for content */
+  }
+
+  .content>a {
+    margin-top: 10px;
+    /* Adjust top margin for links in content */
+  }
+
+  .heading {
+    margin-top: 20px;
+    /* Adjust top margin for the heading */
+  }
+
+  .heading>h1 {
+    font-size: 48px;
+    /* Decrease font size for the heading */
+    margin-top: 60px;
+    /* Adjust top margin for the heading */
+  }
+
+  .heading>p {
+    font-size: 14px;
+    /* Decrease font size for the paragraph */
+    margin-top: 10px;
+    /* Adjust top margin for the paragraph */
+  }
+
+  .heading>div>button {
+    margin-top: 20px;
+    /* Adjust top margin for the button */
+    padding: 16px;
+    /* Adjust padding for the button */
+    font-size: 18px;
+    /* Decrease font size for the button */
+  }
+
+  .bennar {
+    height: 400px;
+    width: 70%
+      /* Adjust the height of the banner */
+  }
+
+  .features>.feature-img>.picture {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    /* Change the flex direction of features to column */
+    align-items: center;
   }
 
   .feature-img {
-      grid-template-columns: repeat(1, 1fr); /* Change to one column for smaller screens */
-      margin-left: 0; /* Remove left margin for the feature images */
+    grid-template-columns: repeat(1, 1fr);
+    /* Change to one column for smaller screens */
+    margin-left: 0;
+    /* Remove left margin for the feature images */
   }
 
   .features-list {
-      margin-left: 0; /* Remove left margin for the features list */
+    margin-left: 0;
+    /* Remove left margin for the features list */
   }
 
   .features-list h3 {
-      font-size: 18px; /* Decrease the font size for the features list heading */
+    font-size: 18px;
+    /* Decrease the font size for the features list heading */
   }
 
   .features-list>p {
-      margin-top: 12px; /* Reduce the top margin for the features list paragraph */
+    margin-top: 12px;
+    /* Reduce the top margin for the features list paragraph */
   }
 
   .features-list>button {
-      font-size: 16px; /* Decrease the font size for the features list button */
+    font-size: 16px;
+    /* Decrease the font size for the features list button */
   }
 
   .mainFeatures {
-      flex-direction: column-reverse; /* Reverse the order for the mainFeatures sections */
+    flex-direction: column-reverse;
+    /* Reverse the order for the mainFeatures sections */
   }
 
   .mainFeatures-list {
-      width: 100%; /* Make the mainFeatures list full width */
+    width: 100%;
+    /* Make the mainFeatures list full width */
   }
 
   .mainFeatures-img {
-      width: 100%; /* Make the mainFeatures image full width */
+    width: 100%;
+    /* Make the mainFeatures image full width */
   }
 
-  .experience {
-      margin-left: 0; /* Remove left margin for the experience section */
-      margin-top: 20px; /* Adjust the top margin for the experience section */
-  }
+
+  
 
   .experience>h2 {
-      font-size: 36px; /* Decrease the font size for the experience section heading */
+    font-size: 36px;
+    /* Decrease the font size for the experience section heading */
   }
 
   .facts {
-      margin-top: 60px; /* Adjust the top margin for the facts section */
+    margin-top: 60px;
+    /* Adjust the top margin for the facts section */
   }
 
   .facts h2 {
-      font-size: 24px; /* Decrease the font size for the facts section heading */
+    font-size: 24px;
+    /* Decrease the font size for the facts section heading */
   }
 
   .facts>p {
-      margin-top: 12px; /* Reduce the top margin for the facts section paragraph */
+    margin-top: 12px;
+    /* Reduce the top margin for the facts section paragraph */
   }
 
   .achivement {
-      flex-direction: column; /* Change the direction of achivement section to a single column */
-      margin-top: 20px; /* Adjust the top margin for the achivement section */
+    width: 85%;
+    /* Change the direction of achivement section to a single column */
+    margin-top: 20px;
+    /* Adjust the top margin for the achivement section */
   }
 
   .medal {
-      margin-bottom: 20px; /* Add some space between medal elements */
+    margin-bottom: 20px;
+    padding: 25px 15px;
+    /* Add some space between medal elements */
   }
 
   .medal h3,
   .medal p {
-      font-size: 20px; /* Decrease the font size for medal headings and paragraphs */
+    font-size: 20px;
+    /* Decrease the font size for medal headings and paragraphs */
   }
 
   .sponspoes {
-      margin-top: 60px; /* Adjust the top margin for the sponspoes section */
+    margin-top: 60px;
+    /* Adjust the top margin for the sponspoes section */
   }
 
   .sponspoes h2 {
-      font-size: 36px; /* Decrease the font size for the sponspoes section heading */
+    font-size: 36px;
+    /* Decrease the font size for the sponspoes section heading */
   }
 
   .sponspoes p {
-      margin-top: 12px; /* Reduce the top margin for the sponspoes section paragraph */
+    margin-top: 12px;
+    /* Reduce the top margin for the sponspoes section paragraph */
   }
+
   .logo img {
-    width: 70px; /* Decrease the image width for smaller screens */
-    height: 25px; /* Decrease the image height for smaller screens */
-}
+    width: 70px;
+    /* Decrease the image width for smaller screens */
+    height: 25px;
+    /* Decrease the image height for smaller screens */
+  }
+  .logo{
+    width: 90%;
+  }
+  .logo i {
+    font-size: 25px;
+    /* Decrease the icon size for smaller screens */
+    margin-right: 8px;
+   
+    /* Reduce the right margin for the icons */
+  }
 
-.logo i {
-    font-size: 25px; /* Decrease the icon size for smaller screens */
-    margin-right: 8px; /* Reduce the right margin for the icons */
-}
+  .logo p {
+    font-size: 22px;
+    /* Decrease the font size for text in the logo section */
+  }
 
-.logo p {
-    font-size: 22px; /* Decrease the font size for text in the logo section */
-}
-
-.copyright {
-    margin-top: 40px; /* Adjust the top margin for the copyright section */
-    margin-bottom: 40px; /* Adjust the bottom margin for the copyright section */
-    font-size: 14px; /* Decrease the font size for the copyright text */
-    padding: 20px; /* Reduce the padding for the copyright section */
-}
+  .copyright {
+    width: 95%;
+   
+    margin-top: 40px;
+    /* Adjust the top margin for the copyright section */
+    margin-bottom: 40px;
+    /* Adjust the bottom margin for the copyright section */
+    font-size: 14px;
+    /* Decrease the font size for the copyright text */
+    padding: 20px;
+    /* Reduce the padding for the copyright section */
+  }
 }
 

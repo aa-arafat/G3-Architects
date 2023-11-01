@@ -23,12 +23,24 @@ header::before {
     justify-content: space-between;
     align-items: center;
 }
-
+@keyframes colorChange {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 .companyNamae {
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
-
+    background: linear-gradient(to right, #FF0000, #00FF00, #0000FF); /* Gradient with color stops */
+    background-size: 200% 100%;
+    animation: colorChange 5s linear infinite; /* Adjust the duration for slower animation */
+    background-clip: text; /* Clip text to background */
+    -webkit-background-clip: text; /* For compatibility with older browsers */
+    color: transparent; /* Make text transparent */
 }
 
 .content {
@@ -356,13 +368,26 @@ header::before {
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 30px 20px;
-
 }
 
-.medal i {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
+/* Add animation to the .medal element */
+@keyframes giggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  /* Rotate and change background color when hovering over the .medal element */
+  .medal:hover {
+     
+       /* Ensure it's an inline-block element */
+        animation: giggle 1s ease infinite; /* Play the 'giggle' animation infinitely */
+        transform-origin: center; /* Set the transform origin to the center */
+      
+  }
+  
 
 .medal h3,
 .medal p {
@@ -372,6 +397,9 @@ header::before {
     margin-bottom: 5px;
     font-weight: 600;
 
+}
+.medal i{
+    font-size: 30px;
 }
 
 .medal p {
@@ -408,13 +436,48 @@ header::before {
     line-height: 26px;
     /* 162.5% */
 }
+@keyframes colorChange {
+  0% {
+    color: initial; /* Start with the default color */
+  }
+  10% {
+    color: #FF0000; /* Red */
+  }
+  20% {
+    color: #00FF00; /* Green */
+  }
+  30% {
+    color: #0000FF; /* Blue */
+  }
+  40% {
+    color: #FFFF00; /* Yellow */
+  }
+  50% {
+    color: #FF00FF; /* Magenta */
+  }
+  60% {
+    color: #00FFFF; /* Cyan */
+  }
+  70% {
+    color: #FFA500; /* Orange */
+  }
+  80% {
+    color: #008000; /* Dark Green */
+  }
+  90% {
+    color: #800080; /* Purple */
+  }
+  100% {
+    color: #000000; /* Black */
+  }
+}
 
 .logo {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-
+    animation: colorChange 3s linear infinite;
 }
 
 .logo img {
