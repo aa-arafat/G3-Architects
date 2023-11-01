@@ -35,6 +35,9 @@ header::before {
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
+   
+}
+.companyNamae:hover{
     background: linear-gradient(to right, #FF0000, #00FF00, #0000FF); /* Gradient with color stops */
     background-size: 200% 100%;
     animation: colorChange 5s linear infinite; /* Adjust the duration for slower animation */
@@ -42,7 +45,6 @@ header::before {
     -webkit-background-clip: text; /* For compatibility with older browsers */
     color: transparent; /* Make text transparent */
 }
-
 .content {
     display: flex;
     column-gap: 60px;
